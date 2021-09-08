@@ -78,7 +78,7 @@ void View::onClickView(wxCommandEvent& event)
 
 	SQLCHAR* emailValue = (SQLCHAR*)&emailStrValue[0];
 
-	odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=tcp:92.23.221.140, 1433;DATABASE=Customer Registry;UID=tester;PWD=tester123;");
+	odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=msi, 1433;DATABASE=Customer Registry;");
 	odbc::initiateStatement(hConnection, hStatement);
 	SQLBindParameter(hStatement, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR, 50, 0, emailValue, 0, nullptr);
 	odbc::directExecute(hStatement, (SQLWCHAR*)L"{call spView_Customer(?)}");

@@ -123,8 +123,7 @@ void Add::onClickAdd(wxCommandEvent& event)
 	{
 		if (fNameLen < 30 and lNameLen < 30 and emailLen < 50 and phoneLen < 20)
 		{
-			fNameCtrl->SetValue("oh yea");
-			odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=tcp:92.23.221.140, 1433;DATABASE=Customer Registry;UID=tester;PWD=tester123;");
+			odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=msi, 1433;DATABASE=Customer Registry;");
 			odbc::initiateStatement(hConnection, hStatement);
 			rc = SQLBindParameter(hStatement, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR, 30, 0, fNameValue, 0, nullptr);
 			rc = SQLBindParameter(hStatement, 2, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR, 30, 0, lNameValue, 0, nullptr);

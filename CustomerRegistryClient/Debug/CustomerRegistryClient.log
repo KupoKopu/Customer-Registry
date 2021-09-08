@@ -5,5 +5,4 @@
   Modify.cpp
   View.cpp
   Generating Code...
-OdbcEasyLibrary.lib(OdbcEasyLibrary.obj) : warning LNK4099: PDB 'OdbcEasyLibrary.pdb' was not found with 'OdbcEasyLibrary.lib(OdbcEasyLibrary.obj)' or at 'C:\Users\lukas\source\repos\Customer-Registry\Debug\OdbcEasyLibrary.pdb'; linking object as if no debug info
-  CustomerRegistryClient.vcxproj -> C:\Users\lukas\source\repos\Customer-Registry\Debug\CustomerRegistryClient.exe
+  CustomerRegistryClient.vcxproj -> C:\Users\lukas\source\repos\customer-registry-repos\solve dependencies\Customer-Registry\Debug\CustomerRegistryClient.exe

@@ -9,9 +9,20 @@ c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\add.o
 c:\users\lukas\source\repos\customer-registry\debug\customerregistryclient.ilk
 c:\users\lukas\source\repos\customer-registry\debug\customerregistryclient.exe
 c:\users\lukas\source\repos\customer-registry\debug\customerregistryclient.pdb
-c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\cl.command.1.tlog
-c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\cl.read.1.tlog
-c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\cl.write.1.tlog
-c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\link.command.1.tlog
-c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\link.read.1.tlog
-c:\users\lukas\source\repos\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\link.write.1.tlog
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\add.obj
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\helperfunctions.obj
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\main.obj
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\menu.obj
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\modify.obj
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\view.obj
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\vc142.idb
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\vc142.pdb
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\debug\customerregistryclient.pdb
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\debug\customerregistryclient.exe
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\debug\customerregistryclient.ilk
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\cl.command.1.tlog
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\cl.read.1.tlog
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\cl.write.1.tlog
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\link.command.1.tlog
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\link.read.1.tlog
+c:\users\lukas\source\repos\customer-registry-repos\solve dependencies\customer-registry\customerregistryclient\debug\customer.f9b73c08.tlog\link.write.1.tlog
