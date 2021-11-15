@@ -34,6 +34,3 @@ private:
 	SQLHSTMT hStatement{};
 };
 #endif // !MODIFY
-
-
-

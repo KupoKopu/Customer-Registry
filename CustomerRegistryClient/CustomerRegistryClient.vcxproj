@@ -28,7 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Add.h" />
-    <ClInclude Include="Dependencies\OdbcEasyLibrary\includes\OdbcEasyLibrary.h" />
+    <ClInclude Include="Dependencies\OdbcEasyLibrary\include\OdbcEasyLibrary.h" />
     <ClInclude Include="HelperFunctions.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="main.h" />
@@ -140,10 +140,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CustomerRegistryClient\Dependencies\OdbcEasyLibrary\include;$(SolutionDir)CustomerRegistryClient\Dependencies\wxWidgets-3.1.5\include;$(SolutionDir)CustomerRegistryClient\Dependencies\wxWidgets-3.1.5\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)CustomerRegistryClient\Dependencies\OdbcEasyLibrary\lib;$(SolutionDir)CustomerRegistryClient\Dependencies\wxWidgets-3.1.5\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -154,12 +156,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CustomerRegistryClient\Dependencies\OdbcEasyLibrary\include;$(SolutionDir)CustomerRegistryClient\Dependencies\wxWidgets-3.1.5\include;$(SolutionDir)CustomerRegistryClient\Dependencies\wxWidgets-3.1.5\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)CustomerRegistryClient\Dependencies\OdbcEasyLibrary\lib;$(SolutionDir)CustomerRegistryClient\Dependencies\wxWidgets-3.1.5\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
