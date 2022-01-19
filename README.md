@@ -4,12 +4,16 @@ A C++ GUI Application.
 
 Main goal was to play around with database connections which is why it's a 'Customer Registry' or registration application.
 
-Built with MSVC v142 - VS 2019 C++ x64/x86 build tools
+Build information:
+- Built with MSVC v142 - VS 2019 C++ x64/x86 build tools.
+- Currently only possible to build wtih x86 release.
+
 
 Dependencies:
 wxwidgets 3.1.5 (Shouldn't matter since its within the project)
 
 notes:
+- Need to add debug build of my ODBC functions lib.
 - Need to find out how licensing works and how to comply with other projects, because I simply shoved wxwidgets built libs in here with no regard...
 - Probably should include my odbc functions lib file's project in here or as a separate repo
 - Want to try and build with multiple compilers so I'll try and figure how that works
