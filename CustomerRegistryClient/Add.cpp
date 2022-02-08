@@ -121,7 +121,7 @@ void Add::onClickAdd(wxCommandEvent& event)
 	}
 	else
 	{
-		if (fNameLen < 30 and lNameLen < 30 and emailLen < 50 and phoneLen < 20)
+		if (is_customer_length_correct)
 		{
 			odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=msi, 1433;DATABASE=CustomerRegistry;");
 			odbc::initiateStatement(hConnection, hStatement);
