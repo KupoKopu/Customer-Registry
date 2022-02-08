@@ -114,14 +114,14 @@ void Add::onClickAdd(wxCommandEvent& event)
 		wxMessageDialog* dial = new wxMessageDialog(NULL, wxT("Please enter a valid phone number"), wxT("Alert"), wxOK);
 		dial->ShowModal();
 	}
-	else if (emailStrValue.find('@') == std::string::npos)
+	else if (is_email(emailStrValue))
 	{
 		wxMessageDialog* dial = new wxMessageDialog(NULL, wxT("Please enter a valid email"), wxT("Alert"), wxOK);
 		dial->ShowModal();
 	}
 	else
 	{
-		if (is_customer_length_correct)
+		if (is_customer_length_correct(fNameLen, lNameLen, emailLen, phoneLen))
 		{
 			odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=msi, 1433;DATABASE=CustomerRegistry;");
 			odbc::initiateStatement(hConnection, hStatement);
