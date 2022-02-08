@@ -5,4 +5,6 @@
 
 bool is_digits(const std::string& str);
 
+bool is_email(const std::string& str);
+
 #endif // !HELPERFUNCTIONS
