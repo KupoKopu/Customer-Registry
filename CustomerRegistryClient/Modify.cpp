@@ -132,9 +132,9 @@ void Modify::onClickModify(wxCommandEvent& event)
 	}
 	else
 	{
-		if (fNameLen < 30 and lNameLen < 30 and emailLen < 50 and phoneLen < 20)
+		if (is_customer_length_correct(fNameLen, lNameLen, emailLen, phoneLen))
 		{
-			odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=msi, 1433;DATABASE=Customer Registry;");
+			odbc::connect(hConnection, (SQLWCHAR*)L"DRIVER={SQL Server};SERVER=msi, 1433;DATABASE=CustomerRegistry;");
 			odbc::initiateStatement(hConnection, hStatement);
 
 			SQLBindParameter(hStatement, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR, 30, 0, fNameValue, 0, nullptr);
