@@ -1,7 +1,7 @@
 #ifndef MODIFY
 #define MODIFY
 #include "Includes.h"
-#include <vector>
+#include "formFrame.h"
 #include "Menu.h"
 class Modify : public wxFrame
 {
@@ -21,6 +21,15 @@ public:
 	wxTextCtrl* emailCtrl;
 	wxStaticText* phoneStatic;
 	wxTextCtrl* phoneCtrl;
+
+	wxPanel* background;
+	wxBoxSizer* mainHBox;
+	wxPanel* rightPanel;
+	wxBoxSizer* leftVBox;
+	wxBoxSizer* rightVBox;
+	wxBoxSizer* EmailBox;
+
+	formFrame* frameSection;
 
 	void onClickModify(wxCommandEvent& event);
 	void onClickClear(wxCommandEvent& event);

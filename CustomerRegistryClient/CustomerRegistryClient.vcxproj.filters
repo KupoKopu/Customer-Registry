@@ -36,6 +36,9 @@
     <ClCompile Include="HelperFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="formFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Add.h">
@@ -61,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="Dependencies\OdbcEasyLibrary\include\OdbcEasyLibrary.h">
       <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="formFrame.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

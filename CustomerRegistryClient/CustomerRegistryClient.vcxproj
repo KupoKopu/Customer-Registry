@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Add.cpp" />
+    <ClCompile Include="formFrame.cpp" />
     <ClCompile Include="HelperFunctions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -29,6 +30,7 @@
   <ItemGroup>
     <ClInclude Include="Add.h" />
     <ClInclude Include="Dependencies\OdbcEasyLibrary\include\OdbcEasyLibrary.h" />
+    <ClInclude Include="formFrame.h" />
     <ClInclude Include="HelperFunctions.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="main.h" />

@@ -11,13 +11,13 @@ Modify::Modify() : wxFrame(nullptr, wxID_ANY, wxT("Modify"), wxDefaultPosition, 
 
 
 	//controls
-	wxPanel* background = new wxPanel(this, -1, wxDefaultPosition);
+	background = new wxPanel(this, -1, wxDefaultPosition);
 
-	wxBoxSizer* mainHBox = new wxBoxSizer(wxHORIZONTAL);
-	wxPanel* rightPanel = new wxPanel(background, -1, wxDefaultPosition, wxSize(100, 100));
-	wxBoxSizer* leftVBox = new wxBoxSizer(wxVERTICAL);
-	wxBoxSizer* rightVBox = new wxBoxSizer(wxVERTICAL);
-	wxBoxSizer* EmailBox = new wxBoxSizer(wxHORIZONTAL);
+	mainHBox = new wxBoxSizer(wxHORIZONTAL);
+	rightPanel = new wxPanel(background, -1, wxDefaultPosition, wxSize(100, 100));
+	leftVBox = new wxBoxSizer(wxVERTICAL);
+	rightVBox = new wxBoxSizer(wxVERTICAL);
+	EmailBox = new wxBoxSizer(wxHORIZONTAL);
 
 	//left-side controls
 	modify = new wxButton(background, 1, wxT("Modify"));
@@ -25,14 +25,14 @@ Modify::Modify() : wxFrame(nullptr, wxID_ANY, wxT("Modify"), wxDefaultPosition, 
 	back = new wxButton(background, 2, wxT("Back"));
 
 	//right-side controls
-	emailStatic = new wxStaticText(rightPanel, -1, wxT("Email Address"));
+	/*emailStatic = new wxStaticText(rightPanel, -1, wxT("Email Address"));
 	emailCtrl = new wxTextCtrl(rightPanel, -1);
 	fNameStatic = new wxStaticText(rightPanel, -1, wxT("First Name"));
 	fNameCtrl = new wxTextCtrl(rightPanel, -1);
 	lNameStatic = new wxStaticText(rightPanel, -1, wxT("Last Name"));
 	lNameCtrl = new wxTextCtrl(rightPanel, -1);
 	phoneStatic = new wxStaticText(rightPanel, -1, wxT("Phone Number"));
-	phoneCtrl = new wxTextCtrl(rightPanel, -1);
+	phoneCtrl = new wxTextCtrl(rightPanel, -1);*/
 
 
 	//colours
@@ -48,9 +48,10 @@ Modify::Modify() : wxFrame(nullptr, wxID_ANY, wxT("Modify"), wxDefaultPosition, 
 	leftVBox->Add(back);
 
 	//Elements added on right
-	rightPanel->SetSizer(rightVBox);
+	
+	/*rightPanel->SetSizer(rightVBox);
 	rightVBox->Add(emailStatic);
-	rightVBox->Add(EmailBox);
+	rightVBox->Add(emailCtrl);
 
 	rightVBox->Add(fNameStatic);
 	rightVBox->Add(fNameCtrl);
@@ -58,10 +59,19 @@ Modify::Modify() : wxFrame(nullptr, wxID_ANY, wxT("Modify"), wxDefaultPosition, 
 	rightVBox->Add(lNameCtrl);
 
 	rightVBox->Add(phoneStatic);
-	rightVBox->Add(phoneCtrl);
+	rightVBox->Add(phoneCtrl);*/
 
 	//TODO: Figure out how to get borders without using sizers
-	EmailBox->Add(emailCtrl, wxRIGHT, 10);
+	// dont need
+	/*EmailBox->Add(emailCtrl, wxRIGHT, 10);*/
+
+	//dynamic implementation
+	// rightpanel is parent
+	// grid is gridparent
+	wxGridSizer* grid = new wxGridSizer(5, 2, 1, 1);
+	rightPanel->SetSizer(grid);
+	frameSection = new formFrame((wxFrame*)rightPanel, grid, 5);
+	grid->Layout();
 
 	background->SetSizer(mainHBox);
 
